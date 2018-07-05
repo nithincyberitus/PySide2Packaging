@@ -1,9 +1,10 @@
+import os
 # Request Imports
-
+import requests
 #PySide 2 Imports
 from PySide2.QtWidgets import QWidget,QFrame,QLabel,QHBoxLayout,QFormLayout,QLineEdit,QPushButton
 from PySide2.QtGui import QImage,QPixmap
-from PySide2.QtCore import SIGNAL
+from PySide2.QtCore import SIGNAL,Qt
 
 class Layout_Child_1(QFrame):
     def __init__(self):
@@ -11,13 +12,13 @@ class Layout_Child_1(QFrame):
         self.setUp_GUI()
 
     def setUp_GUI(self):
-        self.label = QLabel()
-        self.image = QImage("images/sec_thumb.jpg")
-        self.label.setPixmap(QPixmap.fromImage(self.image))
+        # Image to Be added
+        self.label = QLabel("Hey Secure!")
         self.layout = QHBoxLayout()
         self.layout.addWidget(self.label)
         self.setLayout(self.layout)
 
+        
 
 class Layout_Child_2(QWidget):
     def __init__(self):
@@ -49,5 +50,7 @@ class Layout_Child_2(QWidget):
         #print(resp.status_code)
         if resp.status_code == 200:
             # Go to New Window
+            pass
         else:
             #Show Error
+            pass

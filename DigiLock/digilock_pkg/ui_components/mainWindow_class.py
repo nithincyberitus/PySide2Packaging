@@ -1,5 +1,5 @@
 # UI Imports
-from windowLayout_class import Layout_Main_Window
+from .windowLayout_class import Layout_Main_Window
 # PySide2 Imports
 from PySide2.QtWidgets import QMainWindow,QDesktopWidget
 
@@ -45,3 +45,6 @@ class Main_Window(QMainWindow):
     def Create_CentralWidget(self):
         self.Main_Layout = Layout_Main_Window()
         self.setCentralWidget(self.Main_Layout)
+
+if __name__ == '__main__':
+    pass
