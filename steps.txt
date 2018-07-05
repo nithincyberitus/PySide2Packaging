@@ -1,0 +1,7 @@
+-> Using Python 3.6.5
+-> Create Virtual Environment ( virtualenv -p python3 env)
+-> Use the following to switch to Virtual Environment( source env/bin/activate)
+-> Use the following command to install PySide2 in Virtual Environment ( pip install --index-url=http://download.qt.io/snapshots/ci/pyside/5.11/latest/ pyside2 --trusted-host download.qt.io)
+-> Use the following command to check the package installed or not (python -c "import PySide2")--> (https://docs.python.org/2/using/cmdline.html)
+-> if not successfull please read the following doc (http://wiki.qt.io/Qt_for_Python/GettingStarted)
+-> Freeze the Python package requirements using "pip freeze>requirements.txt" (Update when ever you made installed or removed the packages
