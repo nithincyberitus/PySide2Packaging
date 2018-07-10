@@ -1,3 +1,4 @@
+# On Ubuntu 18.04 LTS
 -> Using Python 3.6.5
 -> Create Virtual Environment ( virtualenv -p python3 env)
 -> Use the following to switch to Virtual Environment( source env/bin/activate)
@@ -5,3 +6,8 @@
 -> Use the following command to check the package installed or not (python -c "import PySide2")--> (https://docs.python.org/2/using/cmdline.html)
 -> if not successfull please read the following doc (http://wiki.qt.io/Qt_for_Python/GettingStarted)
 -> Freeze the Python package requirements using "pip freeze>requirements.txt" (Update when ever you made installed or removed the packages
+#On Windows 10 32bit
+-> Using Python 3.6.4
+-> Create Virtual Environament (virtualenv python)
+-> Switch to Virtual Environament (env\Scripts\activate)
+-> Install PySide2 & Cx_Freeze ( Dependency on Visual C++ based on Python Version)
